@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    overflow-x:hidden;
+    background-color: #222733;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    font-family:'Noto Sans JP', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    margin:0;
+    font-family:'Roboto', sans-serif;
+}
+p{
+    color:#222733;
+    font-size: 1.1rem;
+}

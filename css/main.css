@@ -1,0 +1,22 @@
+
+#projects{
+    width: 100%;
+    height: auto;
+    padding:4rem 0;
+    background-color:#222733;
+}
+.project-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    /* background-color:white; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.project-wrapper>a{
+    padding:180px 0;
+    background-color:grey;
+    margin:0 1.2rem;
+    flex:0 .1 360px;
+}
