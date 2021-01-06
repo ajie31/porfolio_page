@@ -2,11 +2,27 @@
 #projects{
     width: 100%;
     height: auto;
-    padding:4rem 0;
-    background-color:#222733;
+    padding:3rem 0;
+    color: #fff;
+    background:url('../image/background-work.svg');
+    background-color: #2f3b52;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.section-title{
+    font-size:3rem;
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight:300;
+    margin-bottom:3rem;
+    letter-spacing: .5rem;
 }
 .project-wrapper{
-    width: 90%;
+    width: 67.5%;
     margin: 0 auto;
     height: auto;
     /* background-color:white; */
@@ -15,8 +31,72 @@
     justify-content:center;
 }
 .project-wrapper>a{
-    padding:180px 0;
-    background-color:grey;
+    text-decoration: none;
+    padding-bottom:24%;
+    position: relative;
+    /* background:url("../image/portfolio images/attribute web-e.png"); */
+    /* background-color:#2f3b52; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 16px;
     margin:0 1.2rem;
-    flex:0 .1 360px;
+    flex:0 0 24%;
+    transition: box-shadow 0.1s;
+}
+.project-wrapper>a:nth-child(1){
+    background:url("../image/portfolio images/attribute web-e.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.project-wrapper>a:nth-child(2){
+    background:url("../image/portfolio images/productlanding-e.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.project-wrapper>a:nth-child(3){
+    background:url("../image/portfolio images/survey_form-e.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.project-wrapper>a:nth-child(4){
+    background:url("../image/portfolio images/technical_Documentation-e.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.project-wrapper>a::after{
+    width: 100%;
+    height:100%;
+    content:'';
+    position: absolute;
+    bottom:0%;
+    z-index:2;
+    background: rgba( 10,10,10, 0.8 );
+    /* box-shadow: 20px 20px 50px 0 rgba( 4, 4, 4, 0.3 ); */
+    backdrop-filter: blur( 1px );
+    opacity:0;
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 16px;
+    border-top:2px groove rgba(255,255,255,0.5);
+    border-left:2px groove rgba(255,255,255,0.5);
+    transition: opacity .5s;
+}
+ .project-wrapper>a:hover::after{
+    opacity:1;
+}
+.project-wrapper>a:hover{
+    box-shadow: 20px 20px 50px 0 rgba( 4, 4, 4, 1 );
+}
+
+.project-title{
+    letter-spacing:2px;
+    display:flex;
+    justify-content:center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: absolute;
+    z-index:3;
+    color: #d5e9ff;
 }
