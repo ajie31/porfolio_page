@@ -1,6 +1,4 @@
-:root{
-    overflow-x:hidden;
-}
+
 body{
     margin:0;
     width:100%;
@@ -9,6 +7,10 @@ body{
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-family:'Noto Sans JP', sans-serif;
+}
+.all-wrapp{
+    overflow-x:hidden;
+
 }
 h1,h2,h3,h4,h5{
     margin:0;
