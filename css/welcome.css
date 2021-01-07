@@ -228,12 +228,15 @@
     }
     .content-wrapper{
 
-        flex: 0 0 800px;
+        flex: 0 0 860px;
     }
     .quotes-wrapper{
+        position:static;
         font-size: .9rem;
+        height:auto;
     }
     .quotes-wrapper>span{
+        padding:1rem;
         width:85%;
     }
 }
@@ -241,9 +244,30 @@
 
     .intro{
         max-width:75%;
-        flex: 0 0 900px;
+        flex: 0 0 670px;
     }
     .intro>.name{
         display:initial;
+    }
+}
+@media only screen and (max-width: 450px) {
+
+
+    .photo-profile{
+        width:150px;
+        height:150px;
+        top:-100px;
+    }
+    .intro{
+        max-width:90%;
+        padding:0 1rem;
+        flex: 0 0 700px;
+    }
+    .intro>.name{
+        font-size: 2rem;
+    }
+    .intro>.name>span{
+        padding: .2rem 0;
+        font-size: 1rem;
     }
 }

@@ -1,11 +1,13 @@
+:root{
+    overflow-x:hidden;
+}
 body{
     margin:0;
-    overflow-x:hidden;
+    width:100%;
     background-color: #222733;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-
     font-family:'Noto Sans JP', sans-serif;
 }
 h1,h2,h3,h4,h5{
