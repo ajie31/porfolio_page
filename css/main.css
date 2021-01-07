@@ -2,7 +2,7 @@
 #projects{
     width: 100%;
     height: auto;
-    padding:3rem 0;
+    padding:3rem 0 6rem 0;
     color: #fff;
     background:url('../image/background-work.svg');
     background-color: #2f3b52;
@@ -32,7 +32,7 @@
 }
 .project-wrapper>a{
     text-decoration: none;
-    padding-bottom:24%;
+    padding-bottom:23%;
     position: relative;
     /* background:url("../image/portfolio images/attribute web-e.png"); */
     /* background-color:#2f3b52; */
@@ -90,13 +90,26 @@
     box-shadow: 20px 20px 50px 0 rgba( 4, 4, 4, 1 );
 }
 
+.project-tile{
+    width:100%;
+    height:100%;
+}
 .project-title{
+    width:100%;
+    height:2rem;
     letter-spacing:2px;
-    display:flex;
-    justify-content:center;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 700;
+    text-align: center;
     position: absolute;
     z-index:3;
+    bottom:0;
     color: #d5e9ff;
+    opacity:0;
+    transition: opacity .4s, bottom .3s;
+
+}
+.project-wrapper>a:hover .project-title{
+    opacity:1;
+    bottom:48%;
 }
