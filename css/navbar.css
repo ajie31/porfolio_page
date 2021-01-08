@@ -28,13 +28,13 @@
     border-bottom-right-radius: 10px;
 
 }
-ul>li{
+.nav-links-group>ul>li{
     padding:.2rem 1rem .3rem 1rem;
 
     /* width: 10rem; */
 
 }
-ul>:last-child{
+.nav-links-group>ul>:last-child{
     border-right:.21rem solid #222733;
     /* width: 10rem; */
 
@@ -42,4 +42,49 @@ ul>:last-child{
 .nav-link-list>a{
     color:#2f3b52;
     font-size:2rem;
+}
+@keyframes fadeIn {
+    from {
+        opacity:.1;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:.1;
+    }
+}
+@media only screen and (max-width: 450px) {
+
+    .nav-links-group>ul{
+        padding-top:0;
+        -webkit-animation-name: fadeOut;
+        -webkit-animation-duration:1s;
+        -webkit-animation-delay:1.5s;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+
+    }
+    .nav-link-list>a{
+        font-size:1.5rem;
+
+    }
+
+    .nav-links-group>ul:active{
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration:.2s;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .nav-links-group>ul>li{
+        padding:.2rem 1rem .3rem 1rem;
+
+        /* width: 10rem; */
+
+    }
 }
